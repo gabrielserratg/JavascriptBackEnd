@@ -1,0 +1,38 @@
+.styl-backgroundcolor {
+  background-color: #ff4700;
+}
+.styl-imgbackground {
+  max-width: 100%;
+  height: auto;
+}
+.styl-colorlaranja {
+  color: #ff4700;
+}
+.styl-colorbranco {
+  color: #fff;
+}
+.styl-colorpreto {
+  color: #0e0f10;
+}
+.styl-leftmid {
+  left: 5%;
+  top: 30%;
+  position: absolute;
+}
+.styl-size80px {
+  font-size: 80px;
+}
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0e0f10;
+}
+.styl-btnDownload {
+  width: 25%;
+  height: 42px;
+  color: #fff;
+  background-color: #7cfc00;
+  border-radius: 5px;
+}
