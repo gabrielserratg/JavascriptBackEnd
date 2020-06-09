@@ -1,22 +1,25 @@
 {
-  "name": "javascriptbackend",
-  "version": "1.0.1",
-  "description": "JavascriptBackEnd",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gabrielserratg/JavascriptBackEnd.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gabrielserratg/JavascriptBackEnd/issues"
-  },
-  "homepage": "https://github.com/gabrielserratg/JavascriptBackEnd#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+    "name": "javascriptbackend",
+    "version": "1.0.1",
+    "description": "JavascriptBackEnd",
+    "main": "index.js",
+    "scripts": {
+        "Dev": "nodemon src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gabrielserratg/JavascriptBackEnd.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gabrielserratg/JavascriptBackEnd/issues"
+    },
+    "homepage": "https://github.com/gabrielserratg/JavascriptBackEnd#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
 }
