@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
+const bcrypt = require('bcrypt')
 
-app.use(express.json)
+app.use(express.json())
 
 const users = []
 
@@ -13,6 +14,8 @@ app.get('/users', (req, res) => {
 app.post('/users', (req, res) => {
     const user = { name: req.body.name, password: req.body.password }
     users.push(user)
+    res.status(201).send()
+    hash('password') //
 })
 
 
