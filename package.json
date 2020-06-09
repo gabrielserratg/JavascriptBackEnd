@@ -1,0 +1,23 @@
+{
+    "name": "javascriptbackend",
+    "version": "1.1.2",
+    "description": "javascript backend trap",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gabrielserratg/JavascriptBackEnd.git"
+    },
+    "author": "gabrielserratg",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gabrielserratg/JavascriptBackEnd/issues"
+    },
+    "homepage": "https://github.com/gabrielserratg/JavascriptBackEnd#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "nodemon": "^2.0.4"
+    }
+}
