@@ -29,7 +29,11 @@ app.post('/users/login', async(req, res) => {
         return res.status(400).send('Cannot find user')
     }
     try {
-        await bcrypt.compare(req.body.password, user.password)
+        if (await bcrypt.compare(req.body.password, user.password))
+            res.send('Success')
+        else {
+            res.send('Not Allowed')
+        }
     } catch {
         res.status(500).send()
     }
