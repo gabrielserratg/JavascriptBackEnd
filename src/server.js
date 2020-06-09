@@ -11,11 +11,19 @@ app.get('/users', (req, res) => {
     res.json(users)
 })
 
-app.post('/users', (req, res) => {
-    const user = { name: req.body.name, password: req.body.password }
-    users.push(user)
-    res.status(201).send()
-    hash('password') //
+app.post('/users', async(req, res) => {
+    try {
+        const salt = bcrypt.genSalt()
+        const hashedpassword = await bcrypt.hash(req.body.password, salt)
+        console.log(salt)
+        console.log(hashedpassword)
+        const user = { name: req.body.name, password: hashedpassword }
+        users.push(user)
+        res.status(201).send()
+    } catch {
+        res.status(500).send()
+    }
+
 })
 
 
